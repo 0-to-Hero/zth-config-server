@@ -51,5 +51,5 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64,linux/arm64
-          tags: 0-to-Hero/zth-config-server:${{ steps.tag_version.outputs.new_tag }}
+          tags: zthacademy/zth-config-server:${{ steps.tag_version.outputs.new_tag }}
           labels: ${{ steps.docker_meta.outputs.labels }}
